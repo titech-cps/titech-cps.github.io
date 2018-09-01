@@ -1,11 +1,9 @@
 # Advanced System Software (CSC.T431)
 
-## Instructor
-* [Prof. Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
-
-## Day and Period, Room
-* Monday / Thursday, 1-2 (9:00-10:30)
-* W832
+* Intrductor : [Prof. Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
+* Academic Year/Quarter : 2018 / 3Q
+* Days / Periods : Monday & Thursday / 1-2 (9:00-10:30)
+* Room : W832
 
 ## Course description and aims
 This course presents an overview of time as it relates engineering complex software systems including embedded systems. In this course, basic concepts, terminology, and issues of embedded/real-time systems are examined.
