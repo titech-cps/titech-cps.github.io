@@ -1,1 +1,8 @@
-theme: jekyll-theme-cayman
+title: Advanced System Software
+description:
+google_analytics:
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
