@@ -5,7 +5,10 @@
 * Academic Year/Quarter : 2018 / 3Q
 * Days / Periods : Monday & Thursday / 1-2 (9:00-10:30)
 * Room : W832
-* Github: https://github.com/titech-aos/
+* Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
+
+## Announcements
+* 1st lecture will be on 9/27(Thu), 9:00-10:30
 
 ## Course description and aims
 This course presents an overview of time as it relates engineering complex software systems including embedded systems. In this course, basic concepts, terminology, and issues of embedded/real-time systems are examined.
@@ -45,7 +48,7 @@ None required (course materials will be provided via course website)
 ## Reference books, course materials, etc.
 
 ### Platform (Programming Project)
-* [M5Stack](http://www.m5stack.com) ([Github](https://github.com/m5stack/M5Stack))
+* [M5Stack](http://www.m5stack.com) ([Github](https://github.com/m5stack/M5Stack/))
 
 ### Books
 * H. Kopetz, Real-Time Systems: Design Principles for Distributed Embedded Applications (2nd Ed.), Springer, 2011.
