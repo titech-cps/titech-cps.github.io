@@ -21,21 +21,21 @@ By the end of the course students should be able to:
 Embedded Systems, Real-Time Systems, Real-Time Operating Systems, RTOS, Scheduling, Schedulability Analysis, Verification, Model-Checking, Timed Automata
 
 ## Schedule
-1. Course Introduction and Overview, Overview of Real-Time Systems
-2. RTOS (1): Overview, Roles of RTOS Kernels, Real-Time Tasks
-3. RTOS (2): Synchronization Mechanisms in RTOS
-4. RTOS (3): Priorities and Scheduling
-5. RTOS Programming (1): Overview, RTOS Programming in C/C++
-6. RTOS Programming (2): Abstractions Mechanisms for Real-Time Processing
-7. Analysis of Real-Time Systems (1): Schedulability Analysis
-8. Analysis of Real-Time Systems (2): Static Scheduling
-9. Analysis of Real-Time Systems (3): Dynamic Scheduling
-10. Modeling Real-Time Systems (1): Overview
-11. Modeling Real-Time Systems (2): Timed-Automata
-12. Verifying Real-Time Systems (1): Model-Checking Timed-Automata
-13. Verifying Real-Time Systems (2): Verification using UPPAAL
-14. Advanced Topics (1): Fromal Specification of an RTOS Kernel
-15. Advanced Topics (2): Formal Verification of an RTOS Kernel
+1. Course Introduction and Overview, Overview of Embedded Systems
+2. Programming Embedded Systems (1)
+3. Programming Embedded Systems (2)
+4. RTOS (1)
+5. RTOS (2)
+6. RTOS (3)
+7. RTOS (4)
+8. Real-Time Systems (1)
+9. Real-Time Systems (2)
+10. Real-Time Systems (3)
+11. Advanced Topis (1)
+12. Advanced Topis (2)
+13. Advanced Topis (3)
+14. Project Demo (1)
+15. Project Demo (2)
 
 ## Textbook(s)
 None required (course materials will be provided via course website)
