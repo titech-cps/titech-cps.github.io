@@ -22,18 +22,18 @@ Embedded Systems, Real-Time Systems, Real-Time Operating Systems, RTOS, Scheduli
 
 ## Schedule
 1. Course Introduction and Overview, Overview of Embedded Systems
-2. Programming Embedded Systems (1)
-3. Programming Embedded Systems (2)
-4. RTOS (1)
-5. RTOS (2)
-6. RTOS (3)
-7. RTOS (4)
-8. Real-Time Systems (1)
-9. Real-Time Systems (2)
-10. Real-Time Systems (3)
-11. Advanced Topis (1)
-12. Advanced Topis (2)
-13. Advanced Topis (3)
+2. Programming Embedded Systems (1): Development Environment, Basic Concepts, Code Structure
+3. Programming Embedded Systems (2): APIs for Embedded System Programming
+4. RTOS (1): Basic Concepts, Structures of RTOS
+5. RTOS (2): Task Management, Scheduling
+6. RTOS (3): Memory Management, Protection
+7. RTOS (4): Communication
+8. Real-Time Systems (1): Basic Concepts, Schedulability
+9. Real-Time Systems (2): Schedulability Analysis
+10. Real-Time Systems (3): Formalizing Real-Time Systems
+11. Advanced Topis (1): Specification and Verification of Real-Time Systems
+12. Advanced Topis (2): Programming Embedded Systems using FRP (1)
+13. Advanced Topis (3): Programming Enbedded Systems using FRP (2)
 14. Project Demo (1)
 15. Project Demo (2)
 
