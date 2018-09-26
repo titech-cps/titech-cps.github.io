@@ -5,6 +5,7 @@
 * Academic Year/Quarter : 2018 / 3Q
 * Days / Periods : Monday & Thursday / 1-2 (9:00-10:30)
 * Room : W832
+* Github: https://github.com/titech-aos/
 
 ## Course description and aims
 This course presents an overview of time as it relates engineering complex software systems including embedded systems. In this course, basic concepts, terminology, and issues of embedded/real-time systems are examined.
@@ -42,8 +43,13 @@ Embedded Systems, Real-Time Systems, Real-Time Operating Systems, RTOS, Scheduli
 None required (course materials will be provided via course website)
 
 ## Reference books, course materials, etc.
-H. Kopetz, Real-Time Systems: Design Principles for Distributed Embedded Applications (2nd Ed.), Springer, 2011.
-E.-R. Olderog and H. Dierks, Real-Time Systems: Formal Specification and Automatic Verification, Cambridge U. Press, 2008.
+
+### Platform (Programming Project)
+* [M5Stack](http://www.m5stack.com) ([Github](https://github.com/m5stack/M5Stack))
+
+### Books
+* H. Kopetz, Real-Time Systems: Design Principles for Distributed Embedded Applications (2nd Ed.), Springer, 2011.
+* E.-R. Olderog and H. Dierks, Real-Time Systems: Formal Specification and Automatic Verification, Cambridge U. Press, 2008.
 
 ## Assessment criteria and methods
 * Assignment: 50%
