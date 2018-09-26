@@ -1,6 +1,7 @@
-# Advanced System Software (CSC.T431)
+# Advanced System Software
 
-* Intrductor : [Prof. Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
+* Course Code: CSC.T431
+* Intrductor : [Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
 * Academic Year/Quarter : 2018 / 3Q
 * Days / Periods : Monday & Thursday / 1-2 (9:00-10:30)
 * Room : W832
