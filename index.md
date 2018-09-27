@@ -1,7 +1,9 @@
 # Advanced System Software
 
+<img src="/images/logo.jpg" style="float: right; margin: 10px;" />
+
 * Course Code: CSC.T431
-* Intrductor : [Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
+* Instructor : [Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
 * Academic Year/Quarter : 2018 / 3Q
 * Days / Periods : Monday & Thursday / 1-2 (9:00-10:30)
 * Room : W832
@@ -49,6 +51,7 @@ None required (course materials will be provided via course website)
 
 ### Platform (Programming Project)
 * [M5Stack](http://www.m5stack.com) ([Github](https://github.com/m5stack/M5Stack/))
+* [Tutorial](tutorial_en.html)
 
 ### Books
 * H. Kopetz, Real-Time Systems: Design Principles for Distributed Embedded Applications (2nd Ed.), Springer, 2011.
