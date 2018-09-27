@@ -1,6 +1,6 @@
 # Advanced System Software
 
-<img src="/images/logo.jpg" style="float: right; margin: 10px;" />
+<img src="/images/logo.jpg" width="160px" style="float: right; margin: 10px;" />
 
 * Course Code: CSC.T431
 * Instructor : [Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
