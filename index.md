@@ -10,6 +10,7 @@
 * Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
 
 ## Announcements
+* To join the slack workspace of this class, please send me an e-mail containing your name, e-mail address, department and lab.
 * 1st lecture will be on 9/27(Thu), 9:00-10:30
 
 ## Course description and aims
