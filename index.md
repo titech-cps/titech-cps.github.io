@@ -10,8 +10,9 @@
 * Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
 
 ## Announcements
-* To join the slack workspace of this class, please send me an e-mail containing your name, e-mail address, department and lab.
-* 1st lecture will be on 9/27 (Thursday), 9:00-10:30
+* According to the typhoon forcast from Japan Meteorological Agency, the typhoon (tropical cyclone) 1824 will be expected to leave from Kanto area in this morning. I will check the forcast again (around 6AM) and send an announcement about the class. (10/1)
+* To join the slack workspace of this class, please send me an e-mail containing your name, e-mail address, department and lab. (9/27)
+* 1st lecture will be on 9/27 (Thursday), 9:00-10:30 (9/20)
 
 ## Course description and aims
 This course presents an overview of time as it relates engineering complex software systems including embedded systems. In this course, basic concepts, terminology, and issues of embedded/real-time systems are examined.
