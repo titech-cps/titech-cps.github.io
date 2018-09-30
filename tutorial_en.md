@@ -1,10 +1,12 @@
-# M5Stack How-to
+# M5Stack How-To
 
 M5Stack is an open-source modular toolkit for IoT devices.
 This tutorial explains how to set up a development environment for M5Stack on your PC.
 
-## About M5Stack
+-----
+## M5Stack and ESP32
 
+### About M5Stack
 An M5Stack module is an enclosed device that consists of an ESP32 SoC and several peripheral components, including three buttons, an LCD, and a speaker. 
 
 * Models
@@ -30,10 +32,10 @@ An M5Stack module is an enclosed device that consists of an ESP32 SoC and severa
 * Size: 54 x 54 x 17 mm
 * Weight: 120g
 * Web
-  - http://www.m5stack.com
-  - https://github.com/m5stack/M5Stack
+  - [http://www.m5stack.com](http://www.m5stack.com)
+  - [https://github.com/m5stack/M5Stack](https://github.com/m5stack/M5Stack)
 
-## About ESP32
+### About ESP32
 
 ESP32 is a series of low-cost, low-power SoC microcontrollers with integrated WiFi and Bluetooth capabilities, created and developed by Espressif.  Apart from M5Stack, many ESP32-based modules and development boards are available.
 
@@ -69,236 +71,98 @@ ESP32 is a series of low-cost, low-power SoC microcontrollers with integrated Wi
   - 1024bit OTP
   - Cryptographic H/W acceleration: AES, SHA-2, RSA, ESS, RNG
 * Web
-  - https://www.espressif.com
-    + https://www.espressif.com/en/products/hardware/esp32/overview
-  - https://github.com/espressif
-    + https://github.com/espressif/esp-idf
-    + https://github.com/espressif/arduino-esp32
+  - [https://www.espressif.com](https://www.espressif.com)
+    + [https://www.espressif.com/en/products/hardware/esp32/overview](https://www.espressif.com/en/products/hardware/esp32/overview)
+  - [https://github.com/espressif](https://github.com/espressif)
+    + [https://github.com/espressif/esp-idf](https://github.com/espressif/esp-idf)
+    + [https://github.com/espressif/arduino-esp32](https://github.com/espressif/arduino-esp32)
 
 
 -----
-## Development Environment
+## Development Environments for M5Stack
 
-### Toolchain & Library for ESP32
+### Overview
 
-* ESP32(LX6)用のgcc： Espressif 社が無償で提供
-* 基本ランタイムライブラリ：FreeRTOSベース
+Tools and libraries required for developing M5Stack applications are as follows.
 
------
-### 統合開発環境
+1. Toolchain (C/C++ Compiler and other utilities)
+2. ESP-IDF (official development framework for ESP32 distributed by Espressif)
+3. Arduino Core for ESP32 (library for developing applications using Arduino framework)
+4. M5Stack Library (library for developing applications that use M5Stack hardware components)
 
-* ESP-IDF
-  - Official Development Environment for ESP32 by Expressif
-    + https://docs.espressif.com/projects/esp-idf/en/latest/
-    + https://github.com/espressif/esp-idf
-  - CUI
-  - M5Stackの開発にはArduinoライブラリとM5Stackライブラリが必要
-    + https://github.com/m5stack/M5Stack
-* Arduino IDE
-  - ArduinoというマイコンボードのためのGUIベースの開発環境
-    + https://www.arduino.cc
-  - ESP32は公式にサポートされている(Arduino ESP32)
-    + https://github.com/espressif/arduino-esp32
-  - M5Stackの開発にはM5Stackライブラリが追加で必要
-    + https://github.com/m5stack/M5Stack
-* PlatformIO
-  - 各種マイコンボード（およびデスクトップ）のための統合開発環境
-    + https://platformio.org
-  - コマンドラインおよびVSCode, Atom用プラグイン
-    + VSCodeプラグインがおすすめ
-  - ESP32は公式にサポートされている
-  - M5Stackライブラリもサポートされている
+You may chose several options.
 
-その他，MicroPythonやUIFlow等．
+* [Arduino IDE](https://www.arduino.cc)
+    - Simple GUI-based IDE for [Arduino](https://www.arduino.cc)
+    - Toolchain, ESP-IDF and libraries for M5Stack can be easily installed.
+* [PlatformIO](https://platformio.org)
+    - IDE for developing various devices.
+    - Command-line toolset and editor plugins (for Visual Studio Code and Atom) are available
+    - Toolchain, ESP-IDF and libraries for M5Stack can be easily installed.
+* [ESP-IDF](https://github.com/espressif/esp-idf)
+    - Command-line toolset distributed with the official development framework (ESP-IDF)
+    - You should install Arduino Core for ESP32 and M5Stack Library as separate components
 
------
-## 開発環境のセットアップ
 
-必要なもの
+The reset of this section describes how to set up a cross-development environment for M5Stack in which you can upload your programs via USB cable. 
+Other options, for example, setting up cloud-based development environments or methods for uploading programs via WiFi are skipped for now.
 
-* 開発用PC
-  - Mac, Linux, Windowsのどれか
-  - TODO: 必要なスペック等
-* M5Stack Core Gray
-* USB-Cケーブル（M5Stack Coreに付属）
+* First, you need to install USB-UARD driver
+* Then, you can choose either of the following: 
+    - Arduino IDE
+    - PlatformIO
+    - ESP-IDF
 
-M5Stack上で動作するプログラムの開発方法はいくつかあるが，ここでは，開発用PC上でビルドしたプログラムを，USBケーブルでM5Stackにアップロードする（クロス開発）方法について説明する．
-他にも，PCあるいはクラウドベースの開発環境で作成したプログラムをWiFi経由でアップロードする方法もある．
+### Installing USB-UART Driver
 
-セットアップの概要
+M5Stack has a Silicon Labs CP2014 USB-UART adapter as the communication interface to the host PC.
+Download an appropriate device driver for your PC from the following link and follow the instructions along with the driver.
 
-* USB-UARTドライバのインストール（必須）
-* IDEのセットアップ：以下のいずれか
-  - Arduino IDE
-  - ESP-IDF
-  - PlatformIO
+* [https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 
------
-### USB-UARTドライバのインストール
-
-M5StackはSilicon Labs社のCP2104 USB-UARTインターフェースを内蔵しており，開発用PCとの通信に用いている．これを用いるためのドライバを開発用PCにインストールする．
-以下から使用するOSに対応したドライバをダウンロードしてインストールする．
-
-* https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
-
-ドライバ問題なくインストールされると，M5Stackを接続したときに以下のようなシリアルポートが現れる．
+If successfully installed, you can find the following USB-serial port when you connect M5Stack to your PC via a USB cable.
 
 * Mac: `/dev/cu.SLAB_USBtoUART`
-* Linux: `/dev/tty??`
-* Windows: ?
+* Linux: `/dev/ttyUSB0`
 
-**重要**：M5Stackを接続してもシリアルポートが現れない場合，M5Stack側のUSB-Cコネクタを180度回して挿し直してみること．
+You can easily check using shell command `ls /dev/cu.*` or `ls /dev/tty*`.
+
+#### Notes on Cabling
+
+If you cannot find the above port when you connect your PC to the M5Stack device, try to change the orientation of the USB-C plug connected to the device.
+USB-C connectors are usually known to be *reversible* (no orientation).
+However, the wiring of the USB-C connector of M5Stack body may be bit weird and have *orientation*.
+
+Another possible trouble about cabling may occur when you are using a USB-C to USB-C cable. If your PC has only USB-C ports (like recent MacBook and MacBook Pro), you would like to connect to M5Stack using such cables. 
+In my experience, a few instances of M5Stack Core have a connection trouble with some USB-C to USB-C cables. In this case, reversing the connector orientation does not help.  When you come across such trouble with your cable, it is better to give up to use the cable and use USB-C to USB-A adapter and the USB-A to USB-C cable included in the box of M5Stack Core.
+
+
 
 -----
-### Arduino IDEのセットアップ
+### Setting Up Arduino IDE
 
-#### インストール
+#### Installation
 
-Arduino IDEを以下からダウンロードしてインストールする．
+Download an appropriated Arduino IDE application from the following link and install it in your PC.
 
 * https://www.arduino.cc/en/Main/Software
 
-Macの場合は，ダウンロードしたzipファイルを展開し，出てきたアプリケーションを/Applicationsフォルダに移せばよい．
+#### Setting up for M5Stack
 
-#### M5Stackの開発ができるようにする
+##### Method 1
 
-##### 方法1
+You can easily install the required toolchain, framework and libraries using the *board manager* and *library manager* of Arduino IDE.
 
-Arduino IDE のボードマネージャ，ライブラリマネージャを用いてお手軽にセットアップする．
-
-* Arduino IDEの設定(Preference)で，"Additional Boards Manager URLs"に以下を追加する．
+* In the *Preference* window of Arduino IDE, add the following URL to "Additional Boards Manager URLs".
   - `https://dl.espressif.com/dl/package_esp32_index.json`
-* Arduino IDEのメニュー Tools/Board: "..."/Boards Manager... を選択してボードマネージャを起動する．"Filter your search..." とある欄に ESP32 と入れて，esp32 by Espressif Systems をインストールする．Arduino ESP32だけでなく，コンパイラや基本ライブラリもこれで一緒にインストールされる．
-* Arduino IDEのメニュー Tools/Manage Libraries... でライブラリマネージャを起動する．
-"Filter your search..." とある欄に M5Stack と入れて，M5Stack by M5Stack をインストールする．
+* Invoke *Board Manager* from *Tools* menu.
+Type `ESP32` into "Filter your search ..." field and then select "esp32 by Espressif Systems" to install the framework and toolchain.
+* Invoke *Library Manager* fro *Tools* menu.
+Type `M5Stack` into "Filter your search ..." field and then select "M5Stack by M5Stack" to install the required library.
 
-##### 方法2
+##### Method 2
 
-方法1だとライブラリのアップデートへの対応が（とても）遅いので，GitHub上のライブラリをクローンして用いる．
-
-* 以下の "Installing the ESP32 Arduino Core" にしたがって Arduino ESP32 および M5Stack 用ライブラリをそれぞれインストールする．
+* Follow the instructions in the following link.
+In this method, you should manually install the required toolchain, framework and libraries using git and python.
   - https://github.com/m5stack/m5stack
-
-#### テスト
-
-1. M5StackをUSBケーブルで接続する．
-2. Tools/Board: "..." で "M5Stack-Core-ESP32" を選ぶ
-3. Tools/Port をM5Stackのポートに設定する．
-   - Mac: `/dev/cu.SLAB_USBtoUART`
-4. File/Examples/M5Stack/Basics/HelloWorld を選ぶ
-5. Sketch/Verify/Compile でコンパイルする
-6. Sketch/Upload でM5Stackにアップロードする
-7. M5StackのLCDに "Hello World" と表示されればOK
-
------
-### ESP-IDFのセットアップ
-
-* https://docs.espressif.com/projects/esp-idf/en/latest/get-started/
-
-#### インストール
-
-##### ツールチェインのセットアップ
-
-以下のツールチェインをダウンロード
-
-* https://dl.espressif.com/dl/xtensa-esp32-elf-osx-1.22.0-80-g6c4433a-5.2.0.tar.gz
-
-ホームディレクトリに`esp`ディレクトリを作成して，ツールチェインをインストール
-
-```Bash
-$ cd
-$ mkdir esp
-$ cd esp
-$ tar -xvf ~/Download/xtensa-esp32-elf-osx-1.22.0-80-g6c4433a-5.2.0.tar.gz
-```
-
-##### ESP-IDFをインストール
-
-```bash
-$ git clone --recursive https://github.com/espressif/esp-idf.git
-```
-
-##### 環境変数のセットアップ
-
-* `IDF_PATH` の値を `$HOME/esp/esp-idf` とする
-* `PATH` に `$HOME/esp/xtensa-esp32-elf/bin` を追加する
-
-##### ライブラリのインストール
-
-ここまでで，ESP32のための基本的な開発環境がインストールされている．
-M5Stackの開発には，以上に加えて Arduino ESP32 ライブラリと，M5Stack ライブラリが必要になる．
-Arduino ESP32 ライブラリは esp-idf というブランチを指定すること．
-
-```bash
-$ cd ~/esp
-$ mkdir components
-$ cd components
-$ git clone -b idf-update --recursive https://github.com/espressif/arduino-esp32
-$ git clone https://github.com/m5stack/M5Stack
-```
-
-##### テスト
-
- M5StackをUSBケーブルで開発用PCに接続する
-
-プロジェクトディレクトリを作成
-```bash
-$ cd ~/esp
-$ mkdir -p HelloWorld/main
-$ cd HelloWorld
-```
-
-`Makefile` を作成
-```Makefile
-PROJECT_NAME := HelloWorld
-EXTRA_COMPONENT_DIRS := $(HOME)/esp/components
-include $(IDF_PATH)/make/project.mk
-```
-
-mainディレクトリ下にソースファイル等を作成
-```bash
-$ cd main
-$ touch component.mk
-```
-
-`main.cpp` を作成
-```C++
-#include <M5Stack.h>
-
-void setup(){
-  M5.begin();
-  M5.Lcd.print("Hello World");
-}
-void loop() {}
-```
-
-プロジェクトの構成
-
-```bash
-$ cd ~/esp/HelloWorld
-$ tree
-.
-|-- Makefile
-`-- main
-    |-- component.mk
-    `-- main.cpp
-```
-
-ビルド
-
-Mac の場合，OS付属のmakeだと途中でエラーになることがある．
-
-```bash
-$ gmake menuconfig
-$ gmake
-$ gmake flash
-```
-
-`gmake menuconfig` の設定
-
------
-### PlatformIOのセットアップ
-
-Visual Studio Code のExtensionsで，PlatformIO IDE をインストールする．
-
 

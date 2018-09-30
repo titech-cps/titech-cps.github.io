@@ -11,7 +11,7 @@
 
 ## Announcements
 * To join the slack workspace of this class, please send me an e-mail containing your name, e-mail address, department and lab.
-* 1st lecture will be on 9/27(Thu), 9:00-10:30
+* 1st lecture will be on 9/27 (Thursday), 9:00-10:30
 
 ## Course description and aims
 This course presents an overview of time as it relates engineering complex software systems including embedded systems. In this course, basic concepts, terminology, and issues of embedded/real-time systems are examined.
@@ -39,9 +39,9 @@ Embedded Systems, Real-Time Systems, Real-Time Operating Systems, RTOS, Scheduli
 8. Real-Time Systems (1): Basic Concepts, Schedulability
 9. Real-Time Systems (2): Schedulability Analysis
 10. Real-Time Systems (3): Formalizing Real-Time Systems
-11. Advanced Topis (1): Specification and Verification of Real-Time Systems
-12. Advanced Topis (2): Programming Embedded Systems using FRP (1)
-13. Advanced Topis (3): Programming Enbedded Systems using FRP (2)
+11. Advanced Topics (1): Specification and Verification of Real-Time Systems
+12. Advanced Topics (2): Programming Embedded Systems using FRP (1)
+13. Advanced Topics (3): Programming Embedded Systems using FRP (2)
 14. Project Demo (1)
 15. Project Demo (2)
 
@@ -69,5 +69,5 @@ None required (course materials will be provided via course website)
 * CSC.T251 ： Automata and Formal Languages
 
 ## Prerequisites (i.e., required knowledge, skills, courses, etc.)
-* Students must have succesfully completed the related courses or have equivalent knowledge.
+* Students must have successfully completed the related courses or have equivalent knowledge.
 * Students are desired to have familiarity with basic Unix terminal commands.
