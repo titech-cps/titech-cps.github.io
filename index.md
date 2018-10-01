@@ -10,6 +10,7 @@
 * Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
 
 ## Announcements
+* To save time in the next class (10/4), I'd like to know if (some of) you already formed development teams. Please send me (or declare in the class Slack) the team name and team members when you launch your team. As I said in the previous lecture, one-person team may be OK. But the total number of teams should be less than or equal to the number of the development kits (=20). So If there will be too much teams, I will merge some of them. (10/1)
 * As announced via Slack and OCW-i e-mail, today's class is canceled (10/1, 8:48)
 * According to the typhoon forcast from Japan Meteorological Agency, the typhoon (tropical cyclone) 1824 will be expected to leave from Kanto area in this morning. I will check the forcast again (around 6AM) and send an announcement about the class. (10/1)
 * To join the slack workspace of this class, please send me an e-mail containing your name, e-mail address, department and lab. (9/27)
