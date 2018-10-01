@@ -71,6 +71,6 @@ None required (course materials will be provided via course website)
 * CSC.T344 ： System Programming
 * CSC.T251 ： Automata and Formal Languages
 
-## Prerequisites (i.e., required knowledge, skills, courses, etc.)
+## Prerequisites
 * Students must have successfully completed the related courses or have equivalent knowledge.
 * Students are desired to have familiarity with basic Unix terminal commands.
