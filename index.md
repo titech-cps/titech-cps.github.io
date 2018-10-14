@@ -54,8 +54,10 @@ None required (course materials will be provided via course website)
 ## Reference books, course materials, etc.
 
 ### Platform (Programming Project)
-* [M5Stack](http://www.m5stack.com) ([Github](https://github.com/m5stack/M5Stack/))
-* [Tutorial](tutorial_en.html)
+* [M5Stack](http://www.m5stack.com) 
+    - [Github](https://github.com/m5stack/M5Stack/)
+    - [YouTube Channel](https://www.youtube.com/channel/UCozgFVglWYQXbvTmGyS739w)
+* [Setting-up Tutorial](tutorial_en.html)
 
 ### Books
 * H. Kopetz, Real-Time Systems: Design Principles for Distributed Embedded Applications (2nd Ed.), Springer, 2011.
