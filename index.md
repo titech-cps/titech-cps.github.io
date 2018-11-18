@@ -10,6 +10,7 @@
 * Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
 
 ## Announcements
+* Each team representative member should upload the title and summary of the project via OCW-i by the end of November. (11/19)
 * Class canceled: 10/18 (Thu)
 * To save time in the next class (10/4), I'd like to know if (some of) you already formed development teams. Please send me (or declare in the class Slack) the team name and team members when you launch your team. As I said in the previous lecture, one-person team may be OK. But the total number of teams should be less than or equal to the number of the development kits (=20). So If there will be too much teams, I will merge some of them. (10/1)
 * As announced via Slack and OCW-i e-mail, today's class is canceled (10/1, 8:48)
@@ -48,6 +49,11 @@ Embedded Systems, Real-Time Systems, Real-Time Operating Systems, RTOS, Scheduli
 13. Advanced Topics (3): Programming Embedded Systems using FRP (2)
 14. Project Demo (1)
 15. Project Demo (2)
+
+## Project Demo
+* Date & Time: December 6 (Thu), 15:05-18:20
+* Place: CS Faculty Meeting Room (W8E-10F)
+* Each team has 15 minutes (10 min for presentation & demo, 3 min for Q&A, 2 min for preparation)
 
 ## Textbook(s)
 None required (course materials will be provided via course website)
