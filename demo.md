@@ -1,7 +1,7 @@
 # Project Demo
 
 Date, Time & Place
-* 2018/12/6 15:05-18:20 (7-8 & 9-10)
+* 2018/12/6 (Wed), 15:05-18:20 (7-8 & 9-10)
 * CS Faculty Meeting Room (W8E-10F)
 
 ## Program
@@ -217,7 +217,7 @@ Because of the nature of the game, we must utilize FreeRTOS features to develop 
 * Joshua Manzano
 
 #### Project Summary
-The project consists of a virtual pet which you interact with through the three buttons that the M5 Stack has. The mechanics work similarly to Tamagotchi (たまごっち, 拓麻歌子), wherein you feed and take care of the virtual pet. The DHT12 Temperature and Humidity sensor from the Proto package will allow the virtual pet to feel the current environment around it, shivering when it is cold and sweating when it is hot. The virtual pet receives a periodical increase of hunger and thirst depending on the temperature and humidity of the environment. Random events may also happen based on a random number generator and the current temperature and humidity. The virtual pet also has the capability to locate open WiFi networks and connect to them, in which the virtual pet can jump to another device and you can interact with it through a webpage (HTTP).
+The project consists of a virtual pet which you interact with through the three buttons that the M5 Stack has. The mechanics work similarly to Tamagotchi (たまごっち, 拓麻歌子), wherein you feed and take care of the virtual pet. The DHT12 Temperature and Humidity sensor from the Proto package will allow the virtual pet to feel the current environment around it, shivering when it is cold and sweating when it is hot. The virtual pet receives a periodical increase of hunger and thirst depending on the temperature and humidity of the environment. Random events may also happen based on a random number generator and the current temperature and humidity. The virtual pet also has the capability to locate open WiFi networks and connect to them, in which the virtual pet can jump to another device and you can interact with it through a webpage (HTTP).
 
 * The periodic tasks are as follows:
   - Increase of hunger, thirst, comfort etc.
