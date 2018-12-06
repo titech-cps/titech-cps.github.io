@@ -1,5 +1,28 @@
-# Demo Project Summary
+# Project Demo
 
+Date, Time & Place
+* 2018/12/6 15:05-18:20 (7-8 & 9-10)
+* CS Faculty Meeting Room (W8E-10F)
+
+## Program
+
+1. Pong Game (team: "\>\<script\>alert(1);)
+2. IoT Roast Beef (team: Suzuki)
+3. Chat Bot Watch (team: narahara)
+4. Remote DC Motor Monitoring and Controlling System (team: noob)
+5. Ωt4𝑘𝜇0 𝑅𝑜𝑏𝑜 (team: IQ1)
+6. “The Game” (team: “Team name”)
+7. Simple M5 Stack Maze Game (team: 810)
+8. M5 Pet (team: Nine)
+9. Alarm clock prevent from despair awake (team: non-sugar-cocoa)
+10. POS Defender (team: Kilimanjaro)
+
+Each team has 15 minutes
+* 2 min for setup
+* 10 min for presentation and demo
+* 3 min for Q&A
+
+-----
 ## Pong Game
 
 ### Team: "\>\<script\>alert(1);
@@ -18,79 +41,6 @@ Second, these M5stacks communicate with each other. They tell the ball and their
 Third, we use RTOS functions to combine these features. The xTaskCreate function creates a new task and adds it to the list of tasks that are ready to run. We make two tasks. One task reads the sensor's value and stores these value to the global variable. The other task communicates with the corresponding task in the other device. The xTimerCreate function creates a new software timer instance. The xTimerStart function the timer callback function invokes periodically. The periodic timer ensures the display redrawn at a constant rate. It is helpful to you for smooth playing. 
 
 [1]: https://en.wikipedia.org/wiki/Pong
-
------
-## POS Defender
-
-### Team: Kilimanjaro
-* Akihiko Yokoyama (B4, Dept. of Computer Science)
-    * Send a signal to another M5Stack via WiFi.
-    * Post to Slack via WiFi.
-* Shohei Kuroiwa (B4, Dept. of Computer Science)
-    * Handle Motion Sensor.
-    * Hide web browser on PC.
-    * Get a music by YouTube.
-* Takahiro Ishihara (M1, Dept. of Systems and Control Engineering)
-    * Manipulate a robot.
-    * Bright a rotating warning light.
-    * Play a music.
-
-### Project Summary
-POS(Parent Over Shoulder) is big issue for students who live with their parents.
-We don't want to reveal our SNS accounts or something to our parents.
-Then we develop POS Defender System.
-
-To detect our parent entering our room, we use PIR Motion Sensor.
-If M5Stack detects a human, M5Stack sends signals via WiFi.
-First, M5Stack post when our parent entered our room to Slack.
-Second, M5Stack send a signal to our PC.
-If our PC receives a signal, PC kills Xorg/Wayland or do something to hide web browser or game window.
-Third, M5Stack send a signal to another M5Stack.
-Another M5Stack control a robot.
-We equip this robot with a rotating warning light and omni or mechanum wheels.
-If another M5Stack receives a signal, this robot start to move somewhere, bright a rotating warning light and play a music in order to attract our parent's attention.
-We try to get a music by YouTube.
-
------
-## Alarm clock prevent from despair awake
-
-### Team: non-sugar-cocoa
-* Ryotaro Onuki
-    - Project Management
-    - Hardware Design
-* Takuma Yoshioka
-    - System Design
-* Masashi Oyama
-    - User Interface Design
-* Takeshi Sekihara
-    - Software Implementation
-
-### Project summary
-
-We made an alarm clock that we have never seen before.
-This product will give you a exciting life!
-
-#### Key Function 1: One job to get up
-
-This function is very effective to prevent users from going back to sleep.
-The device will ring a sound when the time set the alarm comes.
-However, you cannot stop this alarm by just pressing the button.
-In order to stop the sound, you must shake the device again and again.
-Such intense exercise help you to wake clearly and have a refreshing morning.
-As IMU is installed in M5stack, this function can be implemented.
-
-#### Key Function 2: No worry about oversleep
-
-If you overslept, you do not have to worry about it.
-Since this device is connected to the Internet, it can send a message that you will be late.
-
-#### Using M5stack Function
-
-- WiFi communication
-- LCD
-- Button
-- Speaker
-- Gyro Sensor
 
 -----
 ## IoT Roast Beef
@@ -137,6 +87,34 @@ Each M5Stack is equipped with FreeRTOS and it makes it possible to easily perfor
 A smartwatch which we can talk with chatbot by speech recognition, chatbot API, and speech synthesis.
 
 -----
+## Remote DC Motor Monitoring and Controlling System
+
+### Team: noob
+
+* LANG, Chen
+  - Project Manager
+  - Peripheral Hardware Designer
+  - Motor Controller Software Developer
+* ZHANG, Zhiyang
+  - Remote Controller Software Developer
+  - Testing
+* GAO, Tianyang
+  - Remote Controller Software Developer
+  - Testing
+
+### Project Summary
+
+<img src="/images/noob.png" style="float: center; margin: 10px;" />
+
+Our project is a DC motor controller with a remote monitoring and controlling functionalities. The DC motor is controlled by the M5Stack device named “Motor Controller”. All the system information, that are voltage, current and temperature, will be collected by “Motor Controller” and sent to the other M5Stack device named “Remote Controller”. The LCD of “Remote Controller” displays all the system information.
+
+Also, “Motor Controller” is responsible for protecting the circuit. If the voltage, current or temperature is abnormal, the controller will cut off the main power supply by controlling the relay via pin G16.
+
+So, there are mainly 3 periodic tasks in “Motor Controller”: communication task, monitoring task, and motor drive task. Since motor drive task needs to generate PWM wave, it has the shortest period and the highest priority. Monitoring task is responsible for protecting the circuit, so it has the second shortest period. Communication task is the least important, so it has the longest period and the lowest priority.
+
+In addition, user can use button to send instructions via the “Remote Controller” to “Motor Controller” and then control the speed and the direction of the DC motor. Besides, these two M5Stack devices communicate via WIFI.
+
+-----
 ## Ωt4𝑘𝜇0 𝑅𝑜𝑏𝑜
 
 ### Team: IQ1
@@ -172,31 +150,6 @@ and to change face picture displayed in the server device's LCD display.
 *  When the server receives requests to perform actions,the server send commands to the robot, and then the robot invokes corresponding program which is installed in robots and when receives commands to change face, the server
 renders corresponding picture in the LCD display.
 
------
-## Remote DC Motor Monitoring and Controlling System
-
-### Team: noob
-
-* LANG, Chen
-  - Project Manager
-  - Peripheral Hardware Designer
-  - Motor Controller Software Developer
-* ZHANG, Zhiyang
-  - Remote Controller Software Developer
-  - Testing
-* GAO, Tianyang
-  - Remote Controller Software Developer
-  - Testing
-
-### Project Summary
-
-Our project is a DC motor controller with a remote monitoring and controlling functionalities. The DC motor is controlled by the M5Stack device named “Motor Controller”. All the system information, that are voltage, current and temperature, will be collected by “Motor Controller” and sent to the other M5Stack device named “Remote Controller”. The LCD of “Remote Controller” displays all the system information.
-
-Also, “Motor Controller” is responsible for protecting the circuit. If the voltage, current or temperature is abnormal, the controller will cut off the main power supply by controlling the relay via pin G16.
-
-So, there are mainly 3 periodic tasks in “Motor Controller”: communication task, monitoring task, and motor drive task. Since motor drive task needs to generate PWM wave, it has the shortest period and the highest priority. Monitoring task is responsible for protecting the circuit, so it has the second shortest period. Communication task is the least important, so it has the longest period and the lowest priority.
-
-In addition, user can use button to send instructions via the “Remote Controller” to “Motor Controller” and then control the speed and the direction of the DC motor. Besides, these two M5Stack devices communicate via WIFI.
 
 -----
 ## “The Game”
@@ -278,3 +231,76 @@ The project consists of a virtual pet which you interact with through the three 
   - Interaction of the user (feeding, comforting, etc.)
   - Connecting to a WiFi network
   - Random event triggered by a random number
+
+-----
+## Alarm clock prevent from despair awake
+
+### Team: non-sugar-cocoa
+* Ryotaro Onuki
+    - Project Management
+    - Hardware Design
+* Takuma Yoshioka
+    - System Design
+* Masashi Oyama
+    - User Interface Design
+* Takeshi Sekihara
+    - Software Implementation
+
+### Project summary
+
+We made an alarm clock that we have never seen before.
+This product will give you a exciting life!
+
+#### Key Function 1: One job to get up
+
+This function is very effective to prevent users from going back to sleep.
+The device will ring a sound when the time set the alarm comes.
+However, you cannot stop this alarm by just pressing the button.
+In order to stop the sound, you must shake the device again and again.
+Such intense exercise help you to wake clearly and have a refreshing morning.
+As IMU is installed in M5stack, this function can be implemented.
+
+#### Key Function 2: No worry about oversleep
+
+If you overslept, you do not have to worry about it.
+Since this device is connected to the Internet, it can send a message that you will be late.
+
+#### Using M5stack Function
+
+- WiFi communication
+- LCD
+- Button
+- Speaker
+- Gyro Sensor
+
+-----
+## POS Defender
+
+### Team: Kilimanjaro
+* Akihiko Yokoyama (B4, Dept. of Computer Science)
+    * Send a signal to another M5Stack via WiFi.
+    * Post to Slack via WiFi.
+* Shohei Kuroiwa (B4, Dept. of Computer Science)
+    * Handle Motion Sensor.
+    * Hide web browser on PC.
+    * Get a music by YouTube.
+* Takahiro Ishihara (M1, Dept. of Systems and Control Engineering)
+    * Manipulate a robot.
+    * Bright a rotating warning light.
+    * Play a music.
+
+### Project Summary
+POS(Parent Over Shoulder) is big issue for students who live with their parents.
+We don't want to reveal our SNS accounts or something to our parents.
+Then we develop POS Defender System.
+
+To detect our parent entering our room, we use PIR Motion Sensor.
+If M5Stack detects a human, M5Stack sends signals via WiFi.
+First, M5Stack post when our parent entered our room to Slack.
+Second, M5Stack send a signal to our PC.
+If our PC receives a signal, PC kills Xorg/Wayland or do something to hide web browser or game window.
+Third, M5Stack send a signal to another M5Stack.
+Another M5Stack control a robot.
+We equip this robot with a rotating warning light and omni or mechanum wheels.
+If another M5Stack receives a signal, this robot start to move somewhere, bright a rotating warning light and play a music in order to attract our parent's attention.
+We try to get a music by YouTube.
