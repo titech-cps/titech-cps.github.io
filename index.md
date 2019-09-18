@@ -4,20 +4,13 @@
 
 * Course Code: CSC.T431
 * Instructor : [Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
-* Academic Year/Quarter : 2018 / 3Q
+* Academic Year/Quarter : 2019 / 3Q
 * Days / Periods : Monday & Thursday / 1-2 (9:00-10:30)
 * Room : W832
 * Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
 
 ## Announcements
-* [Project Demo](demo.html) program is now available. (12/3)
-* Each team representative member should upload the title and summary of the project via OCW-i by the end of November. (11/19)
-* Class canceled: 10/18 (Thu)
-* To save time in the next class (10/4), I'd like to know if (some of) you already formed development teams. Please send me (or declare in the class Slack) the team name and team members when you launch your team. As I said in the previous lecture, one-person team may be OK. But the total number of teams should be less than or equal to the number of the development kits (=20). So If there will be too much teams, I will merge some of them. (10/1)
-* As announced via Slack and OCW-i e-mail, today's class is canceled (10/1, 8:48)
-* According to the typhoon forcast from Japan Meteorological Agency, the typhoon (tropical cyclone) 1824 will be expected to leave from Kanto area in this morning. I will check the forcast again (around 6AM) and send an announcement about the class. (10/1)
-* To join the slack workspace of this class, please send me an e-mail containing your name, e-mail address, department and lab. (9/27)
-* 1st lecture will be on 9/27 (Thursday), 9:00-10:30 (9/20)
+* 1st lecture will be on 9/30 (Monday), 9:00-10:30 (9/18)
 
 ## Course description and aims
 This course presents an overview of time as it relates engineering complex software systems including embedded systems. In this course, basic concepts, terminology, and issues of embedded/real-time systems are examined.
@@ -35,27 +28,24 @@ By the end of the course students should be able to:
 Embedded Systems, Real-Time Systems, Real-Time Operating Systems, RTOS, Scheduling, Schedulability Analysis, Verification, Model-Checking, Timed Automata
 
 ## Schedule
-1. Course Introduction and Overview, Overview of Embedded Systems
-2. Programming Embedded Systems (1): Development Environment, Basic Concepts, Code Structure
-3. Programming Embedded Systems (2): APIs for Embedded System Programming
-4. RTOS (1): Basic Concepts, Structures of RTOS
-5. RTOS (2): Task Management, Scheduling
-6. RTOS (3): Memory Management, Protection
-7. RTOS (4): Communication
-8. Real-Time Systems (1): Basic Concepts, Schedulability
-9. Real-Time Systems (2): Schedulability Analysis
-10. Real-Time Systems (3): Formalizing Real-Time Systems
-11. Advanced Topics (1): Specification and Verification of Real-Time Systems
-12. Advanced Topics (2): Programming Embedded Systems using FRP (1)
-13. Advanced Topics (3): Programming Embedded Systems using FRP (2)
-14. Project Demo (1)
-15. Project Demo (2)
+1. 9/30 (Mon) 1-2: Course Introduction and Overview, Overview of Cyber-Physical Systems
+2. 10/3 (Thu) 1-2: RTOS (1): Overview, Roles of RTOS Kernels, Real-Time Tasks
+3. 10/7 (Mon) 1-2: RTOS (2):  Synchronization Mechanisms in RTOS, Priorities and Scheduling
+4. 10/17 (Thu) 1-2: RTOS Programming (1): Overview, RTOS Programming in C/C++
+5. 10/28 (Mon) 1-2: RTOS Programming (2): Abstractions Mechanisms for Real-Time Processing
+6. 10/31 (Thu) 1-2: Modeling Cyber-Physical Systems (1): Synchronous Model
+7. 11/4 (Mon) 1-2: Modeling Cyber-Physical Systems (2): Asynchronous Model
+8. 11/7 (Thu) 1-2: Modeling Cyber-Physical Systems (3): Timed Model
+9. 11/11 (Mon) 1-2: Verifying Real-Time Systems: Model-Checking Timed-Automata
+10. 11/14 (Thu) 1-2: Analysis of Real-Time Systems (1): Schedulability Analysis and Static Scheduling
+11. 11/18 (Mon) 1-2: Analysis of Real-Time Systems (2): Dynamic Scheduling
+12. 11/21 (Thu) 1-2: Advanced Topics: Functional Reactive Programming
+13. 12/5 (Thu) 7-10 (15:05-18:20): Project Demo
 
 ## Project Demo
-* Date & Time: December 6 (Thu), 15:05-18:20
+* Date & Time: December 5 (Thu), 15:05-18:20
 * Place: CS Faculty Meeting Room (W8E-10F)
 * Each team has 15 minutes (10 min for presentation & demo, 3 min for Q&A, 2 min for preparation)
-* [Program](demo.html)
 
 ## Textbook(s)
 None required (course materials will be provided via course website)
@@ -69,7 +59,7 @@ None required (course materials will be provided via course website)
 * [Setting-up Tutorial](tutorial_en.html)
 
 ### Books
-* H. Kopetz, Real-Time Systems: Design Principles for Distributed Embedded Applications (2nd Ed.), Springer, 2011.
+* R. Alur, Principles of Cyber-Physical Systems, MIT Press, 2015.
 * E.-R. Olderog and H. Dierks, Real-Time Systems: Formal Specification and Automatic Verification, Cambridge U. Press, 2008.
 
 ## Assessment criteria and methods
