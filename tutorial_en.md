@@ -103,24 +103,23 @@ You may chose several options.
     - Command-line toolset distributed with the official development framework (ESP-IDF)
     - You should install Arduino Core for ESP32 and M5Stack Library as separate components
 
-
-The reset of this section describes how to set up a cross-development environment for M5Stack in which you can upload your programs via USB cable. 
+The rest of this section describes how to install and set up the development environment listed above.
 Other options, for example, setting up cloud-based development environments or methods for uploading programs via WiFi are skipped for now.
 
-* First, you need to install USB-UARD driver
+* First, you need to install USB-UART driver to connect your PC to M5Stack.
 * Then, you can choose either of the following: 
     - Arduino IDE
     - PlatformIO
-    - ESP-IDF
+    - ESP-IDF (with command line tools)
 
 ### Installing USB-UART Driver
 
-M5Stack has a Silicon Labs CP2014 USB-UART adapter as the communication interface to the host PC.
+M5Stack is equipped with a Silicon Labs CP2014 USB-UART adapter as the communication interface to the host PC.
 Download an appropriate device driver for your PC from the following link and follow the instructions along with the driver.
 
 * [https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 
-If successfully installed, you can find the following USB-serial port when you connect M5Stack to your PC via a USB cable.
+If the device driver is successfully installed, you should be able to find the following USB-serial port when you connect M5Stack to your PC via a USB cable.
 
 * Mac: `/dev/cu.SLAB_USBtoUART`
 * Linux: `/dev/ttyUSB0`
@@ -131,12 +130,10 @@ You can easily check using shell command `ls /dev/cu.*` or `ls /dev/tty*`.
 
 If you cannot find the above port when you connect your PC to the M5Stack device, try to change the orientation of the USB-C plug connected to the device.
 USB-C connectors are usually known to be *reversible* (no orientation).
-However, the wiring of the USB-C connector of M5Stack body may be bit weird and have *orientation*.
+However, the wiring of the USB-C connector on the M5Stack main board may be bit weird and have *orientation*.
 
-Another possible trouble about cabling may occur when you are using a USB-C to USB-C cable. If your PC has only USB-C ports (like recent MacBook and MacBook Pro), you would like to connect to M5Stack using such cables. 
-In my experience, a few instances of M5Stack Core have a connection trouble with some USB-C to USB-C cables. In this case, reversing the connector orientation does not help.  When you come across such trouble with your cable, it is better to give up to use the cable and use USB-C to USB-A adapter and the USB-A to USB-C cable included in the box of M5Stack Core.
-
-
+Another possible trouble about cabling may occur when you are using a USB-C to USB-C cable. If your PC has only USB-C ports (like recent MacBook or MacBook Pro), you would like to connect to M5Stack using such cables. 
+In my experience, a few instances of M5Stack Core have a connection trouble with some USB-C to USB-C cables. In this case, reversing the connector orientation does not help.  When you come across such trouble with your cable, it is better to give up to use the cable and use USB-A to USB-C cable included in the box of M5Stack with a USB-C to USB-A adapter.
 
 -----
 ### Setting Up Arduino IDE
@@ -149,8 +146,6 @@ Download an appropriated Arduino IDE application from the following link and ins
 
 #### Setting up for M5Stack
 
-##### Method 1
-
 You can easily install the required toolchain, framework and libraries using the *board manager* and *library manager* of Arduino IDE.
 
 * In the *Preference* window of Arduino IDE, add the following URL to "Additional Boards Manager URLs".
@@ -159,10 +154,3 @@ You can easily install the required toolchain, framework and libraries using the
 Type `ESP32` into "Filter your search ..." field and then select "esp32 by Espressif Systems" to install the framework and toolchain.
 * Invoke *Library Manager* fro *Tools* menu.
 Type `M5Stack` into "Filter your search ..." field and then select "M5Stack by M5Stack" to install the required library.
-
-##### Method 2
-
-* Follow the instructions in the following link.
-In this method, you should manually install the required toolchain, framework and libraries using git and python.
-  - https://github.com/m5stack/m5stack
-
