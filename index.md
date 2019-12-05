@@ -10,6 +10,7 @@
 * Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
 
 ## Announcements
+* [Project demo program](demo2019.html) is now avilable (12/5)
 * 1st lecture will be on 9/30 (Monday), 9:00-10:30 (9/18)
 
 ## Course description and aims
@@ -46,6 +47,7 @@ Embedded Systems, Real-Time Systems, Real-Time Operating Systems, RTOS, Scheduli
 * Date & Time: December 5 (Thu), 15:05-18:20
 * Place: CS Faculty Meeting Room (W8E-10F)
 * Each team has 15 minutes (10 min for presentation & demo, 3 min for Q&A, 2 min for preparation)
+* [Program](demo2019.html)
 
 ## Textbook(s)
 None required (course materials will be provided via course website)
