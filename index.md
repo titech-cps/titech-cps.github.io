@@ -1,13 +1,9 @@
-# Cyber-Physical Systems
-
-<img src="/images/logo.jpg" width="160px" style="float: right; margin: 10px;" />
-
 * Course Code: CSC.T431
 * Instructor : [Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
 * Academic Year/Quarter : 2020 / 3Q
 * Days / Periods : Monday & Thursday / 1-2 (8:50-10:30)
 * Room : W832
-* Github: [https://github.com/titech-aos](https://github.com/titech-aos/)
+* Github: [https://github.com/titech-cps](https://github.com/titech-cps/)
 
 ## Course description and aims
 A cyber-physical system (CPS) is a collection of computational entities that communicate with one other and interact with the physical world via sensors and actuators. Such systems are  omnipresent today, from automobiles to smart cities.  In this course, basic concepts, theory, and issues of cyber-physical systems are examined. The course aims to ensure that students not only grasp the concepts, but also obtain basic skills to formally model and verify cyber-physical systems.
