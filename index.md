@@ -15,7 +15,7 @@ By the end of the course students should be able to:
 3. have an understanding of the properties of dynamical systems, timed model, and hybrid systems.
 
 ## Keywords
-Cyber-Properties Systems, Reactive Systems, Dynamical Systems, Timed Model, Hybrid Systems,　Embedded Systems, Real-Time Systems, Verification, Reactive Programming, Actor Model
+Cyber-Physical Systems, Reactive Systems, Dynamical Systems, Timed Model, Hybrid Systems,　Embedded Systems, Real-Time Systems, Verification, Reactive Programming, Actor Model
 
 ## Schedule
 1. Course Introduction, Concepts of Cyber-Physical Systems
