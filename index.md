@@ -35,3 +35,19 @@ Cyber-Properties Systems, Reactive Systems, Dynamical Systems, Timed Model, Hybr
 
 ## Textbook
 * R. Alur, Principles of Cyber-Physical Systems, MIT Press, 2015.
+
+## Reference books, course materials, etc.
+Course materials will be provided via the course website.
+
+## Assessment criteria and methods
+* Assignment: 50% 
+* Final exam: 50%
+
+## Related courses
+* CSC.T251 ： Automata and Formal Languages
+* CSC.T371 ： System Software
+* CSC.T374 ： Control Systems
+* CSC.T422 ： Mathematical Theory of Programs
+
+## Prerequisites
+Students must have successfully completed the related courses or have equivalent knowledge.
