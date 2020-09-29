@@ -2,7 +2,7 @@
 * Instructor : [Takuo Watanabe (Department of Computer Science)](http://www.psg.c.titech.ac.jp/~takuo/)
 * Academic Year/Quarter : 2020 / 3Q
 * Days / Periods : Monday & Thursday / 1-2 (8:50-10:30)
-* Room : W832
+* Room : Zoom (URL will be announced via OCW-i)
 * Github: [https://github.com/titech-cps](https://github.com/titech-cps/)
 
 ## Course description and aims
